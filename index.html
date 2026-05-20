@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Moderna — Biotech Case Study</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Space+Mono:wght@400;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">MODERNA</div>
+  <div class="nav-slides">
+    <span id="slide-counter">01 / 11</span>
+  </div>
+  <div class="nav-controls">
+    <button id="prev-btn" onclick="changeSlide(-1)">&#8592;</button>
+    <button id="next-btn" onclick="changeSlide(1)">&#8594;</button>
+  </div>
+</nav>
+
+<!-- PROGRESS BAR -->
+<div id="progress-bar"><div id="progress-fill"></div></div>
+
+<!-- SLIDES CONTAINER -->
+<div id="slides-wrapper">
+
+  <!-- SLIDE 1: TITLE -->
+  <section class="slide active" id="slide-1">
+    <div class="slide-bg dna-bg"></div>
+    <div class="content title-content">
+      <div class="tag-pill">BIOTECHNOLOGY CASE STUDY</div>
+      <h1 class="hero-title">Mod<span class="accent">erna</span></h1>
+      <p class="hero-sub">Rewriting the Code of Life with mRNA Technology</p>
+      <div class="hero-meta">
+        <div class="meta-item"><span class="mono">FOUNDED</span><strong>2010</strong></div>
+        <div class="meta-item"><span class="mono">HQ</span><strong>Cambridge, MA</strong></div>
+        <div class="meta-item"><span class="mono">MARKET CAP</span><strong>~$50B+</strong></div>
+        <div class="meta-item"><span class="mono">EMPLOYEES</span><strong>5,000+</strong></div>
+      </div>
+      <div class="scroll-hint">Press <span class="key">→</span> to advance</div>
+    </div>
+    <div class="helix-visual">
+      <div class="helix-strand"></div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: COMPANY OVERVIEW -->
+  <section class="slide" id="slide-2">
+    <div class="slide-bg grid-bg"></div>
+    <div class="content split-content">
+      <div class="split-left">
+        <div class="slide-num">02</div>
+        <h2>Company <br><span class="accent">Overview</span></h2>
+        <p class="body-text">Moderna is a clinical-stage biopharmaceutical company that pioneered the use of messenger RNA (mRNA) as a new class of medicine. Founded in 2010 by Noubar Afeyan, Robert Langer, and Derrick Rossi, the company has redefined what a drug can be.</p>
+        <p class="body-text">Unlike traditional drugs, Moderna's platform instructs the body's own cells to produce therapeutic proteins — a fundamentally new approach to medicine.</p>
+      </div>
+      <div class="split-right">
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-num">$19.3B</div>
+            <div class="stat-label">2022 Revenue</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">48+</div>
+            <div class="stat-label">Programs in Pipeline</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">~1B</div>
+            <div class="stat-label">COVID Doses Delivered</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">$2.5B</div>
+            <div class="stat-label">R&D Investment (2022)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: THE INNOVATION -->
+  <section class="slide" id="slide-3">
+    <div class="slide-bg circuit-bg"></div>
+    <div class="content center-content">
+      <div class="slide-num">03</div>
+      <h2>The Core <span class="accent">Innovation</span></h2>
+      <p class="body-text center-text">Messenger RNA (mRNA) technology — the scientific breakthrough that acts as a software program for the human body.</p>
+      <div class="process-flow">
+        <div class="process-step">
+          <div class="step-icon">🧬</div>
+          <div class="step-title">Design</div>
+          <div class="step-desc">Synthetic mRNA sequence is designed to encode a specific protein (e.g., spike protein)</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">💉</div>
+          <div class="step-title">Deliver</div>
+          <div class="step-desc">Lipid nanoparticles (LNPs) encapsulate and transport mRNA safely into human cells</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">⚙️</div>
+          <div class="step-title">Produce</div>
+          <div class="step-desc">Ribosomes read the mRNA and produce the target protein</div>
+        </div>
+        <div class="process-arrow">→</div>
+        <div class="process-step">
+          <div class="step-icon">🛡️</div>
+          <div class="step-title">Respond</div>
+          <div class="step-desc">Immune system recognizes the protein and builds lasting protection</div>
+        </div>
+      </div>
+      <div class="innovation-note">
+        <span class="mono-small">KEY ADVANTAGE:</span> No live virus needed · Rapid design updates · Scalable manufacturing
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: FLAGSHIP PRODUCT -->
+  <section class="slide" id="slide-4">
+    <div class="slide-bg dark-mesh"></div>
+    <div class="content split-content">
+      <div class="split-left">
+        <div class="slide-num">04</div>
+        <h2>Flagship Product: <br><span class="accent">mRNA-1273</span></h2>
+        <p class="body-text">Spikevax (mRNA-1273) — Moderna's COVID-19 vaccine — became the first emergency-authorized mRNA vaccine in US history, demonstrating 94.1% efficacy in clinical trials.</p>
+        <ul class="feature-list">
+          <li>Developed in just <strong>63 days</strong> after virus genome published</li>
+          <li>Encodes the SARS-CoV-2 <strong>spike protein</strong></li>
+          <li>Uses proprietary <strong>lipid nanoparticle</strong> delivery</li>
+          <li>Modified nucleosides reduce <strong>immune evasion</strong></li>
+          <li>EUA granted: <strong>December 2020</strong></li>
+          <li>Full FDA approval: <strong>January 2022</strong></li>
+        </ul>
+      </div>
+      <div class="split-right vax-visual">
+        <div class="big-percent">94.1<span>%</span></div>
+        <div class="percent-label">Vaccine Efficacy</div>
+        <div class="bar-compare">
+          <div class="bar-item">
+            <div class="bar-fill" style="height:94%"><span>Moderna</span></div>
+            <div class="bar-label">94.1%</div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-fill pfizer" style="height:95%"><span>Pfizer-BioNTech</span></div>
+            <div class="bar-label">95.0%</div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-fill jj" style="height:67%"><span>J&J</span></div>
+            <div class="bar-label">66.9%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: APPLICATIONS -->
+  <section class="slide" id="slide-5">
+    <div class="slide-bg radial-bg"></div>
+    <div class="content center-content">
+      <div class="slide-num">05</div>
+      <h2>Beyond COVID: <span class="accent">Applications</span></h2>
+      <p class="body-text center-text">Moderna's mRNA platform is a universal drug-making engine. The same technology pipeline that produced COVID vaccines is being adapted across multiple disease areas.</p>
+      <div class="app-grid">
+        <div class="app-card">
+          <div class="app-icon">🦠</div>
+          <div class="app-title">Infectious Disease</div>
+          <div class="app-desc">RSV, HIV, Influenza, CMV, EBV, Nipah virus, Zika</div>
+          <div class="app-stage">Phase 2–3</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🎯</div>
+          <div class="app-title">Oncology</div>
+          <div class="app-desc">Personalized neoantigen cancer vaccines (mRNA-4157 + Keytruda)</div>
+          <div class="app-stage">Phase 3</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">❤️</div>
+          <div class="app-title">Cardiovascular</div>
+          <div class="app-desc">Heart failure therapy — VEGF-A (mRNA-0184) to regenerate blood vessels</div>
+          <div class="app-stage">Phase 2</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🧠</div>
+          <div class="app-title">Rare Diseases</div>
+          <div class="app-desc">Propionic acidemia, Crigler-Najjar syndrome via intrahepatic protein replacement</div>
+          <div class="app-stage">Phase 1–2</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🔬</div>
+          <div class="app-title">Autoimmune</div>
+          <div class="app-desc">Tolerance-inducing mRNA for Type 1 Diabetes, MS, and lupus</div>
+          <div class="app-stage">Preclinical</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🧬</div>
+          <div class="app-title">Gene Editing</div>
+          <div class="app-desc">mRNA-encoded Cas9 for in-vivo CRISPR gene correction therapies</div>
+          <div class="app-stage">Research</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: TECHNOLOGY PLATFORM -->
+  <section class="slide" id="slide-6">
+    <div class="slide-bg lines-bg"></div>
+    <div class="content split-content">
+      <div class="split-left">
+        <div class="slide-num">06</div>
+        <h2>Technology <br><span class="accent">Platform</span></h2>
+        <p class="body-text">Moderna's proprietary platform consists of five integrated technology layers that make rapid, scalable mRNA medicine possible.</p>
+        <div class="tech-layers">
+          <div class="layer"><div class="layer-bar" style="width:100%"></div><span>mRNA Design &amp; Optimization</span></div>
+          <div class="layer"><div class="layer-bar" style="width:88%"></div><span>Lipid Nanoparticle (LNP) Delivery</span></div>
+          <div class="layer"><div class="layer-bar" style="width:82%"></div><span>Manufacturing Scale-Up</span></div>
+          <div class="layer"><div class="layer-bar" style="width:75%"></div><span>Immune Engineering</span></div>
+          <div class="layer"><div class="layer-bar" style="width:68%"></div><span>Clinical Development</span></div>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="platform-highlight">
+          <div class="ph-title">The "Software" Analogy</div>
+          <div class="ph-body">Moderna calls mRNA the "operating system" of the cell. Once the delivery mechanism is perfected, updating the drug is as simple as changing the genetic sequence — like updating software code. This makes iterating for new variants or mutations dramatically faster than traditional vaccine methods.</div>
+        </div>
+        <div class="platform-highlight mt">
+          <div class="ph-title">Speed Advantage</div>
+          <div class="ph-body">Traditional vaccine: 10–15 years development.<br><strong>mRNA vaccine: 63 days</strong> from sequence to IND submission. This is a paradigm shift in pandemic preparedness.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: MARKET IMPACT -->
+  <section class="slide" id="slide-7">
+    <div class="slide-bg dark-mesh"></div>
+    <div class="content center-content">
+      <div class="slide-num">07</div>
+      <h2>Market <span class="accent">Impact</span></h2>
+      <div class="impact-timeline">
+        <div class="tl-item">
+          <div class="tl-year">2010</div>
+          <div class="tl-dot"></div>
+          <div class="tl-desc">Founded with $2M seed funding; $40M Series A from Flagship Pioneering</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2018</div>
+          <div class="tl-dot"></div>
+          <div class="tl-desc">$500M strategic alliance with AstraZeneca; largest biotech deal of the year</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2018</div>
+          <div class="tl-dot"></div>
+          <div class="tl-desc">IPO raises $604M — largest biotech IPO in history at the time</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2020</div>
+          <div class="tl-dot accent-dot"></div>
+          <div class="tl-desc">COVID-19 vaccine EUA; $1.5B US government contract. Stock surges 700%+</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2021</div>
+          <div class="tl-dot"></div>
+          <div class="tl-desc">Revenue hits $17.7B; joins S&amp;P 500; market cap peaks at $200B+</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2023</div>
+          <div class="tl-dot"></div>
+          <div class="tl-desc">Personalized cancer vaccine partnership with Merck advances to Phase 3 trials</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-year">2024–</div>
+          <div class="tl-dot"></div>
+          <div class="tl-desc">Next-gen respiratory combo vaccines; global manufacturing expansion; 48+ pipeline programs</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8: CHALLENGES -->
+  <section class="slide" id="slide-8">
+    <div class="slide-bg grid-bg"></div>
+    <div class="content split-content">
+      <div class="split-left">
+        <div class="slide-num">08</div>
+        <h2>Challenges &amp; <span class="accent">Risks</span></h2>
+        <p class="body-text">Despite revolutionary success, Moderna faces significant headwinds that test the durability of its platform.</p>
+      </div>
+      <div class="split-right full-challenges">
+        <div class="challenge-card">
+          <div class="ch-num">01</div>
+          <div class="ch-content">
+            <div class="ch-title">Revenue Cliff Post-COVID</div>
+            <div class="ch-desc">COVID vaccine demand collapsed from $19.3B (2022) to ~$6.8B (2023). Heavy dependence on a single product creates financial volatility.</div>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-num">02</div>
+          <div class="ch-content">
+            <div class="ch-title">Cold Chain &amp; Storage</div>
+            <div class="ch-desc">mRNA vaccines require ultra-cold storage (−20°C), limiting deployment in low-resource settings and driving up logistics costs.</div>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-num">03</div>
+          <div class="ch-content">
+            <div class="ch-title">Patent Disputes</div>
+            <div class="ch-desc">Ongoing IP battles with BioNTech/Pfizer and NIH over LNP delivery patents threaten royalty revenues and competitive moat.</div>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-num">04</div>
+          <div class="ch-content">
+            <div class="ch-title">Regulatory Uncertainty</div>
+            <div class="ch-desc">mRNA therapies for non-vaccine applications face longer FDA review timelines. Novel modality = limited precedent for approval pathways.</div>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="ch-num">05</div>
+          <div class="ch-content">
+            <div class="ch-title">Vaccine Hesitancy</div>
+            <div class="ch-desc">Public skepticism about mRNA safety, amplified by misinformation, continues to slow adoption of future mRNA therapeutics.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 9: COMPETITIVE LANDSCAPE -->
+  <section class="slide" id="slide-9">
+    <div class="slide-bg radial-bg"></div>
+    <div class="content center-content">
+      <div class="slide-num">09</div>
+      <h2>Competitive <span class="accent">Landscape</span></h2>
+      <div class="competitor-table">
+        <div class="ct-header">
+          <div>Company</div>
+          <div>Core Technology</div>
+          <div>mRNA Programs</div>
+          <div>Market Cap</div>
+          <div>Strength</div>
+        </div>
+        <div class="ct-row highlight-row">
+          <div><strong>Moderna</strong></div>
+          <div>Pure-play mRNA platform</div>
+          <div>48+</div>
+          <div>~$50B</div>
+          <div><span class="badge green">Full Platform</span></div>
+        </div>
+        <div class="ct-row">
+          <div>BioNTech</div>
+          <div>mRNA + cell therapy</div>
+          <div>40+</div>
+          <div>~$25B</div>
+          <div><span class="badge blue">Oncology Focus</span></div>
+        </div>
+        <div class="ct-row">
+          <div>Pfizer</div>
+          <div>Small mol + mRNA (BioNTech JV)</div>
+          <div>5+</div>
+          <div>~$140B</div>
+          <div><span class="badge purple">Distribution Scale</span></div>
+        </div>
+        <div class="ct-row">
+          <div>CureVac</div>
+          <div>Unmodified mRNA</div>
+          <div>10+</div>
+          <div>~$1B</div>
+          <div><span class="badge orange">Thermostable LNP</span></div>
+        </div>
+        <div class="ct-row">
+          <div>Arctus Bio</div>
+          <div>LUNAR LNP delivery</div>
+          <div>8+</div>
+          <div>~$2B</div>
+          <div><span class="badge red">Liver Targeting</span></div>
+        </div>
+      </div>
+      <p class="body-text center-text" style="margin-top:1.5rem;">Moderna's key differentiator: the only company with a <strong>100% mRNA-focused pipeline</strong> across all disease categories.</p>
+    </div>
+  </section>
+
+  <!-- SLIDE 10: FINANCIAL SNAPSHOT -->
+  <section class="slide" id="slide-10">
+    <div class="slide-bg circuit-bg"></div>
+    <div class="content split-content">
+      <div class="split-left">
+        <div class="slide-num">10</div>
+        <h2>Financial <span class="accent">Snapshot</span></h2>
+        <p class="body-text">Moderna transformed from a cash-burning pre-revenue startup to one of the most profitable biotech companies in history within just two years.</p>
+        <div class="fin-stat">
+          <div class="fs-label">Net Profit (2021)</div>
+          <div class="fs-value">$12.2B</div>
+        </div>
+        <div class="fin-stat">
+          <div class="fs-label">Total Doses Supplied (Global)</div>
+          <div class="fs-value">~1B+</div>
+        </div>
+        <div class="fin-stat">
+          <div class="fs-label">R&amp;D Reinvestment Rate</div>
+          <div class="fs-value">~40%</div>
+        </div>
+        <div class="fin-stat">
+          <div class="fs-label">Countries with Supply Agreements</div>
+          <div class="fs-value">70+</div>
+        </div>
+      </div>
+      <div class="split-right">
+        <div class="revenue-chart">
+          <div class="rc-title">Annual Revenue (USD Billions)</div>
+          <div class="rc-bars">
+            <div class="rc-bar-wrap">
+              <div class="rc-bar" style="height:2%"></div>
+              <div class="rc-year">2019</div>
+              <div class="rc-val">$0.06B</div>
+            </div>
+            <div class="rc-bar-wrap">
+              <div class="rc-bar" style="height:9%"></div>
+              <div class="rc-year">2020</div>
+              <div class="rc-val">$0.8B</div>
+            </div>
+            <div class="rc-bar-wrap">
+              <div class="rc-bar accent-bar" style="height:90%"></div>
+              <div class="rc-year">2021</div>
+              <div class="rc-val">$17.7B</div>
+            </div>
+            <div class="rc-bar-wrap">
+              <div class="rc-bar accent-bar" style="height:98%"></div>
+              <div class="rc-year">2022</div>
+              <div class="rc-val">$19.3B</div>
+            </div>
+            <div class="rc-bar-wrap">
+              <div class="rc-bar" style="height:35%"></div>
+              <div class="rc-year">2023</div>
+              <div class="rc-val">$6.8B</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 11: FUTURE OUTLOOK -->
+  <section class="slide" id="slide-11">
+    <div class="slide-bg dna-bg"></div>
+    <div class="content center-content">
+      <div class="slide-num">11</div>
+      <h2>Future <span class="accent">Outlook</span></h2>
+      <p class="body-text center-text">Moderna's vision: <em>"Our mRNA medicines will one day treat most human diseases."</em> Here's how the roadmap looks.</p>
+      <div class="outlook-grid">
+        <div class="outlook-card short">
+          <div class="oc-period">2024–2025</div>
+          <div class="oc-title">Near-Term</div>
+          <ul class="oc-list">
+            <li>RSV + Flu + COVID combo vaccine launch</li>
+            <li>Personalized cancer vaccine Phase 3 readout</li>
+            <li>CMV vaccine Phase 3 completion</li>
+          </ul>
+        </div>
+        <div class="outlook-card mid">
+          <div class="oc-period">2026–2028</div>
+          <div class="oc-title">Medium-Term</div>
+          <ul class="oc-list">
+            <li>First mRNA therapeutic (non-vaccine) approval</li>
+            <li>CRISPR + mRNA combination therapies</li>
+            <li>Intratumoral cancer immunotherapy</li>
+          </ul>
+        </div>
+        <div class="outlook-card long">
+          <div class="oc-period">2030+</div>
+          <div class="oc-title">Long-Term</div>
+          <ul class="oc-list">
+            <li>In-vivo gene editing at scale</li>
+            <li>HIV functional cure program</li>
+            <li>Annual "mRNA health update" concept</li>
+          </ul>
+        </div>
+      </div>
+      <div class="conclusion-box">
+        <strong>Bottom Line:</strong> Moderna is not just a vaccine company. It is building the foundational infrastructure for a new era of precision medicine — one where the body's own cellular machinery becomes the therapeutic tool.
+      </div>
+    </div>
+  </section>
+
+</div><!-- end slides-wrapper -->
+
+<!-- SLIDE DOTS -->
+<div id="slide-dots">
+  <span class="dot active" onclick="goToSlide(0)"></span>
+  <span class="dot" onclick="goToSlide(1)"></span>
+  <span class="dot" onclick="goToSlide(2)"></span>
+  <span class="dot" onclick="goToSlide(3)"></span>
+  <span class="dot" onclick="goToSlide(4)"></span>
+  <span class="dot" onclick="goToSlide(5)"></span>
+  <span class="dot" onclick="goToSlide(6)"></span>
+  <span class="dot" onclick="goToSlide(7)"></span>
+  <span class="dot" onclick="goToSlide(8)"></span>
+  <span class="dot" onclick="goToSlide(9)"></span>
+  <span class="dot" onclick="goToSlide(10)"></span>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
